@@ -7,11 +7,13 @@
 //
 #import "KGFMDBSerializing.h"
 #import "KGFMDBAdapter.h"
-
+#import "FMDatabaseQueue.h"
+#import "FMDatabase.h"
 
 
 @interface KGDbManager : NSObject
-
+@property (nonatomic, strong) FMDatabaseQueue *dbQueue;
+@property (nonatomic, strong) NSString *dbPath;
 
 
 
