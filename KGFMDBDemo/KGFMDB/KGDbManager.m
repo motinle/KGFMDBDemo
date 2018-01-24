@@ -277,7 +277,7 @@ void handleDbexecuteUpdateSqlwithArgumentsInArray(FMDatabase *db ,NSString *sql 
 
 
 #pragma mark - Database Vesion
-- (NSInteger)dbVersion
+- (long)dbVersion
 {
     __block int version = -1;
 
@@ -297,9 +297,9 @@ void handleDbexecuteUpdateSqlwithArgumentsInArray(FMDatabase *db ,NSString *sql 
 }
 
 
--(void)checkNeedUpdateDb:(NSInteger)newVersion
+-(void)checkNeedUpdateDb:(long)newVersion
 {
-    NSInteger currentVersion = [self dbVersion];
+    long currentVersion = [self dbVersion];
 
     if (currentVersion < 0) {
         [self.dbQueue inDatabase:^(FMDatabase *adb) {

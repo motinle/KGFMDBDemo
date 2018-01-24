@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "KGFMDB"
-  s.version      = “1.1”
+  s.version      = "1.1"
   s.summary      = "KGFMDB is a lightweight, object-oriented, database manipulation tool based on FMDB. "
   s.description  = "KGFMDB is a lightweight, object-oriented, database manipulation tool based on FMDB. 2"
   s.homepage     = "https://github.com/motinle/KGFMDBDemo"
