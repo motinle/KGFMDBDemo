@@ -7,10 +7,16 @@
 //
 #import "KGFMDBAdapter.h"
 #import "KGDbManager.h"
+#import "FMDatabaseQueue.h"
+#import "FMDatabase.h"
 #if KGFMDB_YYModel_MAP
 #import "YYModel.h"
 #endif
 
+@interface KGDbManager()
+@property (nonatomic, strong) FMDatabaseQueue *dbQueue;
+@property (nonatomic, strong) NSString *dbPath;
+@end
 
 @implementation KGDbManager
 
