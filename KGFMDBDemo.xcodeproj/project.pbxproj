@@ -13,14 +13,11 @@
 		42760C2B2014897D0047C20A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C2A2014897D0047C20A /* main.m */; };
 		42760C35201489B90047C20A /* NewsDbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C33201489B80047C20A /* NewsDbManager.m */; };
 		42760C3A20148A070047C20A /* NewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C3820148A070047C20A /* NewsObject.m */; };
-		42760C4D20148B020047C20A /* KGDbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C4A20148B020047C20A /* KGDbManager.m */; };
-		42760C4E20148B020047C20A /* KGFMDBAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C4C20148B020047C20A /* KGFMDBAdapter.m */; };
 		7A92BB3C7D85C359E571A1DA /* Pods_KGFMDBDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CB97242A42B8E9B9D191D3 /* Pods_KGFMDBDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		379F5924888A6FAEBB864792 /* Pods-KGFMDBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGFMDBDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KGFMDBDemo/Pods-KGFMDBDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		4212ACEE2018764A00C8A600 /* KGFMDBSerializing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KGFMDBSerializing.h; sourceTree = "<group>"; };
 		42760C182014897D0047C20A /* KGFMDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KGFMDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42760C1B2014897D0047C20A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42760C1C2014897D0047C20A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,10 +29,6 @@
 		42760C34201489B90047C20A /* NewsDbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDbManager.h; sourceTree = "<group>"; };
 		42760C3820148A070047C20A /* NewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsObject.m; sourceTree = "<group>"; };
 		42760C3920148A070047C20A /* NewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsObject.h; sourceTree = "<group>"; };
-		42760C4920148B020047C20A /* KGDbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDbManager.h; sourceTree = "<group>"; };
-		42760C4A20148B020047C20A /* KGDbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDbManager.m; sourceTree = "<group>"; };
-		42760C4B20148B020047C20A /* KGFMDBAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGFMDBAdapter.h; sourceTree = "<group>"; };
-		42760C4C20148B020047C20A /* KGFMDBAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGFMDBAdapter.m; sourceTree = "<group>"; };
 		D9F7AFC17D7D561DA7D34959 /* Pods-KGFMDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGFMDBDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KGFMDBDemo/Pods-KGFMDBDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E5CB97242A42B8E9B9D191D3 /* Pods_KGFMDBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KGFMDBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -55,7 +48,6 @@
 		42760C0F2014897D0047C20A = {
 			isa = PBXGroup;
 			children = (
-				42760C4820148B020047C20A /* KGFMDB */,
 				42760C1A2014897D0047C20A /* KGFMDBDemo */,
 				42760C192014897D0047C20A /* Products */,
 				D6BF81767A17F0A916E6ECD6 /* Pods */,
@@ -86,19 +78,6 @@
 				42760C2A2014897D0047C20A /* main.m */,
 			);
 			path = KGFMDBDemo;
-			sourceTree = "<group>";
-		};
-		42760C4820148B020047C20A /* KGFMDB */ = {
-			isa = PBXGroup;
-			children = (
-				4212ACEE2018764A00C8A600 /* KGFMDBSerializing.h */,
-				42760C4920148B020047C20A /* KGDbManager.h */,
-				42760C4A20148B020047C20A /* KGDbManager.m */,
-				42760C4B20148B020047C20A /* KGFMDBAdapter.h */,
-				42760C4C20148B020047C20A /* KGFMDBAdapter.m */,
-			);
-			name = KGFMDB;
-			path = KGFMDBDemo/KGFMDB;
 			sourceTree = "<group>";
 		};
 		74CAFE7774E9FEA08E4634D3 /* Frameworks */ = {
@@ -251,8 +230,6 @@
 				42760C1D2014897D0047C20A /* AppDelegate.m in Sources */,
 				42760C35201489B90047C20A /* NewsDbManager.m in Sources */,
 				42760C3A20148A070047C20A /* NewsObject.m in Sources */,
-				42760C4E20148B020047C20A /* KGFMDBAdapter.m in Sources */,
-				42760C4D20148B020047C20A /* KGDbManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
