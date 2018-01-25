@@ -13,6 +13,8 @@
 		42760C2B2014897D0047C20A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C2A2014897D0047C20A /* main.m */; };
 		42760C35201489B90047C20A /* NewsDbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C33201489B80047C20A /* NewsDbManager.m */; };
 		42760C3A20148A070047C20A /* NewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 42760C3820148A070047C20A /* NewsObject.m */; };
+		4278398E2019DB5E007AECEB /* KGDbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4278398A2019DB5E007AECEB /* KGDbManager.m */; };
+		4278398F2019DB5E007AECEB /* KGFMDBAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4278398C2019DB5E007AECEB /* KGFMDBAdapter.m */; };
 		7A92BB3C7D85C359E571A1DA /* Pods_KGFMDBDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CB97242A42B8E9B9D191D3 /* Pods_KGFMDBDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,11 @@
 		42760C34201489B90047C20A /* NewsDbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDbManager.h; sourceTree = "<group>"; };
 		42760C3820148A070047C20A /* NewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsObject.m; sourceTree = "<group>"; };
 		42760C3920148A070047C20A /* NewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsObject.h; sourceTree = "<group>"; };
+		427839892019DB5E007AECEB /* KGDbManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGDbManager.h; sourceTree = "<group>"; };
+		4278398A2019DB5E007AECEB /* KGDbManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGDbManager.m; sourceTree = "<group>"; };
+		4278398B2019DB5E007AECEB /* KGFMDBAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGFMDBAdapter.h; sourceTree = "<group>"; };
+		4278398C2019DB5E007AECEB /* KGFMDBAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KGFMDBAdapter.m; sourceTree = "<group>"; };
+		4278398D2019DB5E007AECEB /* KGFMDBSerializing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KGFMDBSerializing.h; sourceTree = "<group>"; };
 		D9F7AFC17D7D561DA7D34959 /* Pods-KGFMDBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KGFMDBDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KGFMDBDemo/Pods-KGFMDBDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E5CB97242A42B8E9B9D191D3 /* Pods_KGFMDBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KGFMDBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +73,7 @@
 		42760C1A2014897D0047C20A /* KGFMDBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				427839882019DB5E007AECEB /* KGFMDB */,
 				42760C1B2014897D0047C20A /* AppDelegate.h */,
 				42760C1C2014897D0047C20A /* AppDelegate.m */,
 				42760C34201489B90047C20A /* NewsDbManager.h */,
@@ -78,6 +86,18 @@
 				42760C2A2014897D0047C20A /* main.m */,
 			);
 			path = KGFMDBDemo;
+			sourceTree = "<group>";
+		};
+		427839882019DB5E007AECEB /* KGFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				427839892019DB5E007AECEB /* KGDbManager.h */,
+				4278398A2019DB5E007AECEB /* KGDbManager.m */,
+				4278398B2019DB5E007AECEB /* KGFMDBAdapter.h */,
+				4278398C2019DB5E007AECEB /* KGFMDBAdapter.m */,
+				4278398D2019DB5E007AECEB /* KGFMDBSerializing.h */,
+			);
+			path = KGFMDB;
 			sourceTree = "<group>";
 		};
 		74CAFE7774E9FEA08E4634D3 /* Frameworks */ = {
@@ -174,12 +194,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KGFMDBDemo/Pods-KGFMDBDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/KGFMDB/KGFMDB.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KGFMDB.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -230,6 +248,8 @@
 				42760C1D2014897D0047C20A /* AppDelegate.m in Sources */,
 				42760C35201489B90047C20A /* NewsDbManager.m in Sources */,
 				42760C3A20148A070047C20A /* NewsObject.m in Sources */,
+				4278398F2019DB5E007AECEB /* KGFMDBAdapter.m in Sources */,
+				4278398E2019DB5E007AECEB /* KGDbManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
